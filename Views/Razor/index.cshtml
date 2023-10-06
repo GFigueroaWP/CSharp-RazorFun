@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor-fun</title>
+</head>
+<body>
+    @{
+        string[] array = new string[]{"Apple pie","Pizza","Cinnamon Rolls","Lasagna","Donuts","Chocolate Cake","Burritos"};
+        foreach(string palabra in array)
+        {
+            if(palabra[0] == 'C')
+            {
+                <p style="color: red;">@palabra</p>
+            }
+            else
+            {
+                <p>@palabra</p>
+            }
+        }
+    }
+</body>
+</html>
